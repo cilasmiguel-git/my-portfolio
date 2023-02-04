@@ -2,9 +2,9 @@ import Home from "./components/Home";
 import NavBar from "./components/Navbar";
 import SocialLinks from "./components/Sociallinks";
 import About from "./components/About"
-import Myportfolios from "./components/Myportfolios"
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Portfolios from "./components/Portfolios";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
-      <Myportfolios/>
+      <Portfolios/>
       <Experience/>
       <Contact/>
       <SocialLinks/>
