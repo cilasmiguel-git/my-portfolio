@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div name="home" id='container' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row '>
+      <div className='max-w-screen-lg p-0 sm:p-14 md:p-24 mx-auto flex flex-col items-center justify-center h-full sm:px-12 md:flex-row '>
         <div className='flex flex-col justify-center h-full w-8/12'>
           <h2 className='text-3xl sm:text-4xl font-bold text-white'>{text}<span className="pointer">|</span></h2>
           <p className='text-gray-500 py-3 max-w-md'>I am a full-stack junior developer with experience in web development using HTML, CSS, JavaScript, React, Bootstrap, and Node. I am familiar with PHP and WordPress, and have knowledge of Java, Python, C# and experience with relational and non-relational databases. I am always eager to learn and take on challenging projects.</p>
