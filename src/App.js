@@ -2,7 +2,7 @@ import Home from "./components/Home";
 import NavBar from "./components/Navbar";
 import SocialLinks from "./components/Sociallinks";
 import About from "./components/About"
-import Portfolio from "./components/Portfolio";
+import Myportfolios from "./components/Myportfolios"
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 
@@ -12,7 +12,7 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
-      <Portfolio/>
+      <Myportfolios/>
       <Experience/>
       <Contact/>
       <SocialLinks/>

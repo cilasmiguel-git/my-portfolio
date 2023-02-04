@@ -1,9 +1,8 @@
 import React from 'react'
-import port1 from '../assets/portfolio/port1.png'
-import embreve from '../assets/portfolio/embreve.jpg'
+import port1 from '../assets/portifolio/port1.png'
+import embreve from '../assets/portifolio/embreve.jpg'
 
-const Portfolio = () => {
-
+const Myportfolios = () => {
     const portfolios = [
         {
             id: 1,
@@ -14,20 +13,20 @@ const Portfolio = () => {
         {
             id: 2,
             src: embreve,
-            demo: '',
+            demo: 'https://www.google.com/',
             code: 'https://github.com/cilasmiguel-git/Chat-Simples-com-Socket-'
         },
         {
             id: 3,
             src: embreve,
-            demo: '',
-            code: ''
+            demo: 'https://www.google.com/',
+            code: 'https://www.google.com/'
         },
         {
             id: 4,
             src: embreve,
-            demo: '',
-            code: ''
+            demo: 'https://www.google.com/',
+            code: 'https://www.google.com/'
         },
     ]
     return (
@@ -40,7 +39,7 @@ const Portfolio = () => {
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-0 sm:px-8 mb-36'>
                     {portfolios.map(({ id, src,code,demo }) => (
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+                            <img src={src} alt="image" className='rounded-md duration-200 hover:scale-105' />
                             <div className='flex items-center justify-center'>
                             <a href={demo}><button className='w-1/2 px-6 py-3 m-4 duraton-200 hover:scale-105'>Demo</button></a>
                                 <a href={code}><button className='w-1/2 px-6 py-3 m-4 duraton-200 hover:scale-105'>Code</button></a>
@@ -53,4 +52,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Myportfolios
