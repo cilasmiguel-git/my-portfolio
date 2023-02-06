@@ -1,7 +1,7 @@
 import React from 'react'
 import port1 from '../assets/portifolio/port1.png'
 import embreve from '../assets/portifolio/embreve.jpg'
-
+import port2 from '../assets/portifolio/port2.png'
 const Portfolios = () => {
 
     const portfolios = [
@@ -13,9 +13,9 @@ const Portfolios = () => {
         },
         {
             id: 2,
-            src: embreve,
-            demo: 'https://www.google.com/',
-            code: 'https://github.com/cilasmiguel-git/Chat-Simples-com-Socket-'
+            src: port2,
+            demo: 'https://cilasmiguel-git.github.io/QR_Code_YT/',
+            code: 'https://github.com/cilasmiguel-git/QR_Code_YT'
         },
         {
             id: 3,
