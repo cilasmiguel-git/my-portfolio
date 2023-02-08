@@ -2,7 +2,8 @@ import React from 'react'
 import port1 from '../assets/portifolio/port1.png'
 import embreve from '../assets/portifolio/embreve.jpg'
 import port2 from '../assets/portifolio/port2.png'
-const Portfolios = () => {
+
+const Projetos= () => {
 
     const portfolios = [
         {
@@ -54,4 +55,4 @@ const Portfolios = () => {
     )
 }
 
-export default Portfolios
+export default Projetos

@@ -33,9 +33,7 @@
   #container {
     flex-direction: column;
     height: 1050px;
-    padding: 25px
-    
-    ;
+    padding: 25px;
   }
   #container img {
     width: 350px;
