@@ -4,7 +4,7 @@ import SocialLinks from "./components/Sociallinks";
 import About from "./components/About"
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import Projetos from "./components/Projetos.jsx";
+import Projetos from "./components/Projetos";
 
 function App() {
   return (

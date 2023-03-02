@@ -1,7 +1,7 @@
 import React from 'react'
 import port1 from '../assets/portifolio/port1.png'
-import embreve from '../assets/portifolio/embreve.jpg'
 import port2 from '../assets/portifolio/port2.png'
+import embreve from '../assets/portifolio/embreve.jpg'
 
 const Projetos= () => {
 
@@ -20,9 +20,9 @@ const Projetos= () => {
         },
         {
             id: 3,
-            src: embreve,
-            demo: 'https://www.google.com/',
-            code: 'https://www.google.com/'
+            src: Cuboflix,
+            demo: 'https://cilasmiguel-git.github.io/Cuboflix/',
+            code: 'https://github.com/cilasmiguel-git/Cuboflix/'
         },
         {
             id: 4,
