@@ -3,9 +3,9 @@ import port1 from '../assets/portifolio/port1.png'
 import port2 from '../assets/portifolio/port2.png'
 import embreve from '../assets/portifolio/embreve.jpg'
 import port3 from '../assets/portifolio/port3.png'
+import port4 from '../assets/portifolio/port4.png'
 
-const Projetos= () => {
-
+const MyProjects = () => {
     const portfolios = [
         {
             id: 1,
@@ -26,15 +26,27 @@ const Projetos= () => {
             code: 'https://github.com/cilasmiguel-git/Cuboflix/'
         },
         {
-            id: 4,
+            id: 5,
+            src: port4,
+            demo: 'https://amazoras-frontend.vercel.app/',
+            code: 'https://github.com/cilasmiguel-git/amazoras_frontend'
+        },
+        {
+            id: 6,
             src: embreve,
-            demo: 'https://www.google.com/',
-            code: 'https://www.google.com/'
+            demo: 'https://my-portfolio-theta-opal.vercel.app/',
+            code: 'https://my-portfolio-theta-opal.vercel.app/'
+        },
+        {
+            id: 7,
+            src: embreve,
+            demo: 'https://my-portfolio-theta-opal.vercel.app/',
+            code: 'https://my-portfolio-theta-opal.vercel.app/'
         }
     ]
 
     return (
-        <div className=' bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full '>
+        <div className=' bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full' name="myprojects">
             <div className='max-w-screen-lg p-2 sm:p-14 md:p-14 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
@@ -56,4 +68,4 @@ const Projetos= () => {
     )
 }
 
-export default Projetos
+export default MyProjects

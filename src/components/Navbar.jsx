@@ -1,30 +1,31 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa"
-import {Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
     const links = [
         {
-            id: 0,
+            id: 1,
             link: "home",
         },
         {
-            id: 1,
+            id: 2,
             link: "about"
         },
         {
-            id: 2,
-            link: "experience"
-        },
-        {
             id: 3,
-            link: "contact"
+            link: "myprojects"
         },
         {
             id: 4,
-            link: "projetos"
-        }
+            link: "experience"
+        },
+        {
+            id: 5,
+            link: "contact"
+        },
+        
     ]
 
     return (

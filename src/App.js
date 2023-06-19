@@ -4,7 +4,7 @@ import SocialLinks from "./components/Sociallinks";
 import About from "./components/About"
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import Projetos from "./components/Projetos";
+import MyProjects from "./components/MyProjects";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
-      <Projetos/>
+      <MyProjects/>
       <Experience/>
       <Contact/>
       <SocialLinks/>
