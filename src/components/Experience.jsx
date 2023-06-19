@@ -9,7 +9,9 @@ import node from '../assets/node-js.png'
 import wordpress from '../assets/wordpress.png'
 import php from '../assets/php.png'
 import python from '../assets/python.png'
-
+import java from '../assets/java.png'
+import angular from '../assets/angular.png'
+import spring from '../assets/spring.png';
 const Experience = () => {
   const techs = [
     {
@@ -71,6 +73,24 @@ const Experience = () => {
       src:python,
       title:'PYTHON',
       style:'shadow-yellow-600'
+    },
+    {
+      id:10,
+      src:java,
+      title:'java',
+      style:'shadow-red-600'
+    },
+    {
+      id:11,
+      src:angular,
+      title:'angular',
+      style:'shadow-red-800'
+    },
+    {
+      id:11,
+      src:spring,
+      title:'spring-boot',
+      style:'shadow-green-300'
     },
   ]
   return (
