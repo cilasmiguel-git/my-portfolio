@@ -12,6 +12,7 @@ import python from '../assets/python.png'
 import java from '../assets/java.png'
 import angular from '../assets/angular.png'
 import spring from '../assets/spring.png';
+
 const Experience = () => {
   const techs = [
     {
