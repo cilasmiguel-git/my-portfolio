@@ -53,9 +53,11 @@ export function TypingAnimation({
   }, [charIndex, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, delayBetweenTexts]);
 
   return (
-    <p className={cn("relative min-h-[6rem] max-w-xl text-lg text-muted-foreground", className)}>
-      {currentText}
-      <span className="animate-blink border-l-2 border-primary absolute bottom-1 right-0 top-1 ml-1"></span>
-    </p>
+    <div className={cn("relative flex h-20 items-center justify-center", className)}>
+        <p className={cn("max-w-xl text-lg text-muted-foreground")}>
+            {currentText}
+            <span className="animate-blink border-l-2 border-primary"></span>
+        </p>
+    </div>
   );
 }
