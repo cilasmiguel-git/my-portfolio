@@ -57,13 +57,12 @@ export default function Home() {
           className="animate-fade-in-up flex flex-col items-center text-center"
           style={{ animationDelay: '0.1s' }}
         >
-          <div className="relative mb-6 h-40 w-40 animate-float">
+          <div className="relative mb-6 h-40 w-40 animate-float overflow-hidden rounded-full border-4 border-primary/50 shadow-2xl">
             <Image
               src={Profile}
               alt="Cilas Miguel"
-              width={160}
-              height={160}
-              className="rounded-full border-4 border-primary/50 object-cover shadow-2xl"
+              fill
+              className="object-cover"
               data-ai-hint="professional photograph"
               priority
             />
