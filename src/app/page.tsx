@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { projects } from '@/data/projects';
 import { WhatsappIcon } from '@/components/ui/WhatsappIcon';
+import Profile from '../../public/d92f9ce9-f518-417c-ac33-ce935ba63f11.png'
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/cilasmiguel-git', 'aria-label': 'GitHub' },
@@ -58,11 +59,11 @@ export default function Home() {
         >
           <div className="relative mb-6 h-40 w-40 animate-float">
             <Image
-              src="/cilas-miguel-profile.jpeg"
+              src={Profile}
               alt="Cilas Miguel"
               width={160}
               height={160}
-              className="rounded-full border-4 border-primary/50 object-cover shadow-2xl"
+              className="rounded-full border-4 border-primary/50 object-contain shadow-2xl"
               data-ai-hint="professional photograph"
               priority
             />
