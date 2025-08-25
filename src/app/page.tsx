@@ -7,12 +7,19 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { projects } from '@/data/projects';
 import { WhatsappIcon } from '@/components/ui/WhatsappIcon';
 import Profile from '../../public/d92f9ce9-f518-417c-ac33-ce935ba63f11.png'
+import { TypingAnimation } from '@/components/ui/typing-animation';
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/cilasmiguel-git', 'aria-label': 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/cilas-miguel-cola%C3%A7o-bezerra-0bb3981b6/', 'aria-label': 'LinkedIn' },
   { icon: WhatsappIcon, href: 'https://wa.me/5581986677867', 'aria-label': 'WhatsApp' },
   { icon: Mail, href: 'mailto:cilasmiguelcolacobp@gmail.com', 'aria-label': 'Email' },
+];
+
+const descriptionTexts = [
+  "Estou estudando para AWS, inclusive para as certificações, e estou atrás de conseguir a Cloud Practitioner.",
+  "Sou um desenvolvedor Full-Stack, então eu tenho boas habilidades tanto no frontend como no backend.",
+  "Estou aberto para oportunidades de estágio, inclusive para vagas júnior, e realmente amo programar."
 ];
 
 function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: (typeof projects)[0]) {
@@ -70,9 +77,7 @@ export default function Home() {
           <h1 className="font-headline text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
             Cilas Miguel
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-            Um desenvolvedor apaixonado, criando experiências web bonitas e funcionais. Sou especialista em tecnologias de frontend modernas e na criação de designs intuitivos e centrados no usuário.
-          </p>
+          <TypingAnimation texts={descriptionTexts} className="mt-4" />
         </section>
 
         <section
