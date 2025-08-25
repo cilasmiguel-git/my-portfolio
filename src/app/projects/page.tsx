@@ -32,7 +32,7 @@ function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: (t
       <CardFooter>
         <Button asChild variant="link" className="px-0">
           <Link href={link}>
-            View Project <ArrowRight className="ml-2 h-4 w-4" />
+            Ver Projeto <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
       </CardFooter>
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
         ))}
       </div>
        <footer className="w-full border-t border-border/50 pt-8 mt-16 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Cilas Miguel. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Cilas Miguel. Todos os direitos reservados.</p>
         </footer>
     </main>
   );
