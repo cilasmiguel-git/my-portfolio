@@ -4,33 +4,7 @@ import { Github, Linkedin, Twitter, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-
-const projects = [
-  {
-    title: 'Project Alpha',
-    description: 'A cutting-edge platform for seamless team collaboration, designed to boost productivity and streamline workflows with real-time updates.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'abstract tech',
-    link: '#',
-    tags: ['React', 'Node.js', 'GraphQL'],
-  },
-  {
-    title: 'Project Beta',
-    description: 'An innovative e-commerce solution with a focus on user experience and conversion optimization, featuring a custom recommendation engine.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'modern design',
-    link: '#',
-    tags: ['Next.js', 'TypeScript', 'Stripe'],
-  },
-  {
-    title: 'Project Gamma',
-    description: 'An open-source data visualization tool that transforms complex datasets into insightful and interactive charts and graphs.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'data visualization',
-    link: '#',
-    tags: ['D3.js', 'Svelte', 'Firebase'],
-  },
-];
+import { projects } from '@/data/projects';
 
 const socialLinks = [
   { icon: Github, href: '#', 'aria-label': 'GitHub' },
@@ -109,9 +83,16 @@ export default function Home() {
             My Projects
           </h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
+            {projects.slice(0, 3).map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
+          </div>
+           <div className="mt-12 text-center">
+            <Button asChild size="lg">
+              <Link href="/projects">
+                Ver mais projetos <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </section>
 
