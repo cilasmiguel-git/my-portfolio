@@ -47,7 +47,7 @@ export default function ProjectsPage() {
         <Button asChild variant="ghost">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Voltar para a página inicial
+            <span>Voltar para a página inicial</span>
           </Link>
         </Button>
       </div>
