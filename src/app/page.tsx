@@ -63,7 +63,7 @@ export default function Home() {
               alt="Cilas Miguel"
               width={160}
               height={160}
-              className="rounded-full border-4 border-primary/50 object-contain shadow-2xl"
+              className="rounded-full border-4 border-primary/50 object-cover shadow-2xl"
               data-ai-hint="professional photograph"
               priority
             />
