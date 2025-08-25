@@ -58,7 +58,7 @@ export default function Home() {
         >
           <div className="relative mb-6 h-40 w-40 animate-float">
             <Image
-              src="/cilas-miguel-profile.jpg"
+              src="/cilas-miguel-profile.jpeg"
               alt="Cilas Miguel"
               width={160}
               height={160}
