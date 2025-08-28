@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,7 +22,16 @@ const descriptionTexts = [
   "Estou aberto para oportunidades de estágio, inclusive para vagas júnior, e realmente amo programar."
 ];
 
-function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: (typeof projects)[0]) {
+type ProjectCardProps = {
+  title: string;
+  description: string;
+  imageUrl: string | StaticImageData;
+  imageHint: string;
+  link: string;
+  tags: string[];
+};
+
+function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: ProjectCardProps) {
   return (
     <Card className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
       <CardHeader>

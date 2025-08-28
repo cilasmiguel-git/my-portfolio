@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,7 +6,16 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { projects } from '@/data/projects';
 
-function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: (typeof projects)[0]) {
+type ProjectCardProps = {
+  title: string;
+  description: string;
+  imageUrl: string | StaticImageData;
+  imageHint: string;
+  link: string;
+  tags: string[];
+};
+
+function ProjectCard({ title, description, imageUrl, imageHint, link, tags }: ProjectCardProps) {
   return (
     <Card className="flex flex-col overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
       <CardHeader>
