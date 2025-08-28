@@ -29,11 +29,11 @@ export const projects: Project[] = [
   },
   {
     title: 'Educação Alternativa 360',
-    description: 'Um aplicativo simples que mostra a previsão do tempo em tempo real para qualquer cidade, utilizando a API do OpenWeatherMap.',
+    description: 'Plataforma escolar completa (backend e frontend) para um cliente, envolvendo manutenção e desenvolvimento contínuo. O projeto utiliza AWS, mensageria por e-mail e incorpora noções de design UX/UI.',
     imageUrl: img3,
-    imageHint: 'weather app',
+    imageHint: 'school platform',
     link: 'https://github.com/cilasmiguel-git/app-clima',
-    tags: ['JavaScript', 'HTML', 'CSS', 'API Rest'],
+    tags: ['React', 'Node.js', 'MongoDB', 'AWS', 'Material-UI', 'Redux', 'Stripe', 'Firebase', 'JWT', 'UX/UI'],
   },
   {
     title: 'Clone do Netflix',
