@@ -32,7 +32,7 @@ export const projects: Project[] = [
     description: 'Plataforma escolar completa (backend e frontend) para um cliente, envolvendo manutenção e desenvolvimento contínuo. O projeto utiliza AWS, mensageria por e-mail e incorpora noções de design UX/UI.',
     imageUrl: img3,
     imageHint: 'school platform',
-    link: 'https://github.com/cilasmiguel-git/app-clima',
+    link: 'https://escola.educacaoalternativa360.com.br/',
     tags: ['React', 'Node.js', 'MongoDB', 'AWS', 'Material-UI', 'Redux', 'Stripe', 'Firebase', 'JWT', 'UX/UI'],
   },
   {
